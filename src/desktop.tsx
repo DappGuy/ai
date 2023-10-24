@@ -59,11 +59,11 @@ export const Desktop = () => {
       <Wrapper>
         <Header />
         <FullSizeContainer>
-          <DesktopPage title="Smart Account Details">
+          <DesktopPage title="Smart Wallet Details">
             <AccountPage />
           </DesktopPage>
 
-          <DesktopPage title="Magic space">
+          <DesktopPage title="DeFiGPT">
             <Box
               id="home-page"
               sx={{
@@ -77,7 +77,7 @@ export const Desktop = () => {
             </Box>
           </DesktopPage>
 
-          <DesktopPage title="Supported Operations">
+          <DesktopPage title="Supported Prompts">
             <Box
               sx={{
                 bgcolor: 'background.paper',

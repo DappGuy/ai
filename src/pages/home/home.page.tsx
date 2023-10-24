@@ -10,19 +10,18 @@ import { PromptInput } from '@/components/base/promt-input';
 import { TabPanel, Tabs, useTab } from '@/components/base/tabs';
 import { Hand } from '@/components/svg/hand';
 import { Template } from '@/components/ui/template';
-import { APP_NAME } from '@/config/constants';
 import { templates } from '@/config/templates';
 import { useIsDesktop } from '@/hooks/is-desktop';
 import { useOperations } from '@/providers/operations';
 
-const tabs = ['Request', 'Templates'];
+const tabs = ['Chat', 'Prompts', 'Image'];
 
 const HomePlaceholder = () => {
   return (
     <Box sx={{ display: 'grid', placeItems: 'center', height: 'fit-content', alignSelf: 'center' }}>
       <Hand />
       <Typography align="center" variant="h6">
-        Hi! I am {APP_NAME}
+        Hi! I am DeFiGPT
       </Typography>
       <Typography align="center" variant="body1">
         Just describe your request— and I'll do the magic.
@@ -83,7 +82,7 @@ export const HomePage = () => {
             promt={promtMessage}
             setPromtMessage={setPromtMessage}
             onSubmit={onPromtSubmit}
-            placeholder={'Enter Your Request'}
+            placeholder={'Swap 0.1 ETH to USDC'}
           />
         </Box>
       </TabPanel>
