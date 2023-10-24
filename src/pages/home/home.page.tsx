@@ -8,7 +8,7 @@ import { OperationScreen } from '@/components/base/operations-screen';
 import { Page } from '@/components/base/page';
 import { PromptInput } from '@/components/base/promt-input';
 import { TabPanel, Tabs, useTab } from '@/components/base/tabs';
-import { Hand } from '@/components/svg/hand';
+import { Robot } from '@/components/svg/hand';
 import { Template } from '@/components/ui/template';
 import { templates } from '@/config/templates';
 import { useIsDesktop } from '@/hooks/is-desktop';
@@ -19,7 +19,7 @@ const tabs = ['Chat', 'Prompts', 'Image'];
 const HomePlaceholder = () => {
   return (
     <Box sx={{ display: 'grid', placeItems: 'center', height: 'fit-content', alignSelf: 'center' }}>
-      <Hand />
+      <Robot />
       <Typography align="center" variant="h6">
         Hi! I am DeFiGPT
       </Typography>

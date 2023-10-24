@@ -1,5 +1,5 @@
 export 
-  const RobotIcon = () => {
+  const Robot = () => {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
         <g fill="none" fillRule="evenodd">
@@ -16,4 +16,4 @@ export
     );
   };
   
-  export default RobotIcon;
+  export default Robot;
