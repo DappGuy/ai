@@ -37,7 +37,9 @@ export const Web3AuthConnectorInstance = (chains: Chain[]) => {
       theme: 'auto',
       defaultLanguage: 'en',
       appLogo: logoUrl, // Your App Logo Here
-      modalZIndex: '2147483647'
+      modalZIndex: '2147483647',
+      displayErrorsOnModal: false 
+
     }
   });
 
