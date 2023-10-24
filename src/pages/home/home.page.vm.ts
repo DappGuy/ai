@@ -18,7 +18,7 @@ export const useHomeViewModel = () => {
         throw new Error('Message is empty');
       }
       if (!smartAccountAddress) {
-        throw new Error('Smart account address is empty');
+        throw new Error('Smart Wallet address is empty');
       }
 
       setIsSubmitting(true);
@@ -54,7 +54,7 @@ export const useHomeViewModel = () => {
 
       callback(operations);
     } catch (error) {
-      callAlert('Sorry, something went wrong. Please try other promt.', '', 0);
+      callAlert('Sorry, something went wrong. Please try another prompt.', '', 0);
       setIsSubmitting(false);
     }
   };
