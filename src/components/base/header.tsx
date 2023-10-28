@@ -3,7 +3,7 @@ import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
 import { InfoPanel } from './info-panel/info-panel';
 import { ChangeMode } from '../ui/change-mode';
 
-import logoUrl from 'https://dreamcanvas.xyz/logo.png';
+
 import { useIsDesktop } from '@/hooks/is-desktop';
 
 export const Header = () => {
@@ -25,7 +25,7 @@ export const Header = () => {
         }}
       >
         <IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-          <img src={logoUrl} alt="logo" />
+          <img src="https://dreamcanvas.xyz/logo.png" alt="logo" />
         </IconButton>
         <Typography
           sx={{
