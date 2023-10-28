@@ -1,4 +1,3 @@
-import React from 'react';
 import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
 import { InfoPanel } from './info-panel/info-panel';
 import { ChangeMode } from '../ui/change-mode';
