@@ -3,7 +3,7 @@ import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
 import { InfoPanel } from './info-panel/info-panel';
 import { ChangeMode } from '../ui/change-mode';
 
-import logoUrl from '@/assets/logo.svg';
+import logoUrl from 'https://dreamcanvas.xyz/logo.png';
 import { useIsDesktop } from '@/hooks/is-desktop';
 
 export const Header = () => {
