@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <AppBar
       sx={{
-        bgcolor: 'header.background',
+        bgcolor: 'red',
         color: 'header.text',
         height: 'shape.headerHeight'
       }}
