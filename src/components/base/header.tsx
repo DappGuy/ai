@@ -4,7 +4,6 @@ import { InfoPanel } from './info-panel/info-panel';
 import { ChangeMode } from '../ui/change-mode';
 
 import logoUrl from '@/assets/logo.svg';
-import { APP_NAME } from '@/config/constants';
 import { useIsDesktop } from '@/hooks/is-desktop';
 
 export const Header = () => {
@@ -13,7 +12,7 @@ export const Header = () => {
   return (
     <AppBar
       sx={{
-        bgcolor: 'red',
+        bgcolor: 'black',
         color: 'header.text',
         height: 'shape.headerHeight'
       }}
@@ -37,7 +36,6 @@ export const Header = () => {
           variant="h6"
           component="div"
         >
-          {APP_NAME}
         </Typography>
         <ChangeMode />
         {!isDesktop && <InfoPanel />}
