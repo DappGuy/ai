@@ -1,9 +1,6 @@
 import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
-
 import { InfoPanel } from './info-panel/info-panel';
 import { ChangeMode } from '../ui/change-mode';
-
-
 import { useIsDesktop } from '@/hooks/is-desktop';
 
 export const Header = () => {
@@ -11,12 +8,8 @@ export const Header = () => {
 
   return (
     <AppBar
-      sx={{
-        backgroundImage: 'https://dreamcanvas.xyz/bg.jpg',
-        color: 'header.text',
-        height: 'shape.headerHeight'
-      }}
       position="static"
+      className="custom-appbar" // Apply a custom CSS class
     >
       <Toolbar
         sx={{
@@ -35,8 +28,7 @@ export const Header = () => {
           }}
           variant="h6"
           component="div"
-        >
-        </Typography>
+        ></Typography>
         <ChangeMode />
         {!isDesktop && <InfoPanel />}
       </Toolbar>
