@@ -39,7 +39,7 @@ const CustomBackdropHeader = styled(Box)(({ theme }) => ({
 }));
 
 const CustomBackdropContent = styled(Box)(({ theme }) => ({
-  overflowY: 'scroll',
+  overflowY: 'auto',
   maxHeight: '100%',
   width: '100%',
   padding: theme.spacing(2),

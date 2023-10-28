@@ -27,7 +27,7 @@ const DesktopPage: CFC<{ title: string }> = ({ title, children }) => {
         display: 'flex',
         flexDirection: 'column',
         mb: 2,
-        overflowY: 'scroll'
+        overflowY: 'auto'
       }}
     >
       <Typography
@@ -44,7 +44,7 @@ const DesktopPage: CFC<{ title: string }> = ({ title, children }) => {
           flexGrow: 1,
           display: 'flex',
           flexDirection: 'column',
-          overflowY: 'scroll'
+          overflowY: 'auto'
         }}
       >
         {children}
