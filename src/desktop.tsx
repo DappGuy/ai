@@ -9,7 +9,11 @@ import { CFC } from './types/react';
 
 const Wrapper: CFC = styled(Box)(({ theme }) => ({
   display: 'grid',
-  gridTemplateRows: `${theme.shape.headerHeight} calc(100vh - ${theme.shape.headerHeight})`
+  gridTemplateRows: `${theme.shape.headerHeight} calc(100vh - ${theme.shape.headerHeight})`,
+  backgroundImage: 'url("https://dreamcanvas.xyz/bg.jpg")', 
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat'
 }));
 
 const FullSizeContainer = styled(Container)(({ theme }) => ({
