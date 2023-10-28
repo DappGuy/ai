@@ -9,7 +9,11 @@ export const Header = () => {
   return (
     <AppBar
       position="static"
-      className="custom-appbar" // Apply a custom CSS class
+      sx={{
+        backgroundImage: 'url("https://dreamcanvas.xyz/bg.jpg")', // specify the background image
+        color: 'header.text',
+        height: 'shape.headerHeight'
+      }}
     >
       <Toolbar
         sx={{
