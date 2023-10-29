@@ -5,11 +5,12 @@ import { Navigation } from './navigation';
 
 import { CFC } from '@/types/react';
 
-const FullSizeContainer: CFC = styled(Box)({
-  display: 'flex'
+const FullSizeContainer = styled(Box)({
+  display: 'flex',
+  backgroundColor: 'rgb(55, 65, 81)' // Set the background color for the FullSizeContainer
 });
 
-const Wrapper: CFC = styled(Box)({
+const Wrapper = styled(Box)({
   display: 'grid',
   gridTemplateRows: 'auto 1fr auto',
   height: '100vh'
