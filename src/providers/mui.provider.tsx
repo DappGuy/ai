@@ -58,13 +58,6 @@ export const MuiProvider: CFC = ({ children }) => {
             },
           },
         },
-        MuiContainer: {
-          styleOverrides: {
-            root: {
-              backgroundColor: 'rgb(55, 65, 81)', // Set the background color for all Container components
-            },
-          },
-        },
         MuiButtonBase: {
           // ... custom configurations for MuiButtonBase
         },
