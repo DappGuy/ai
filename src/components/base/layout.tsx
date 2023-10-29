@@ -6,7 +6,8 @@ import { Navigation } from './navigation';
 import { CFC } from '@/types/react';
 
 const FullSizeContainer = styled(Box)({
-  display: 'flex'
+  display: 'flex',
+  backgroundColor: 'rgb(55, 65, 81) !important' // Set the background color with !important to override other styles
 });
 
 const Wrapper = styled(Box)({
@@ -19,11 +20,12 @@ export const Layout: CFC = ({ children }) => {
   return (
     <Wrapper>
       <Header />
-      <FullSizeContainer sx={{ backgroundColor: 'rgb(55, 65, 81)', 'css-1qnowbl': { backgroundColor: 'rgb(55, 65, 81)' } }}>
+      <FullSizeContainer>
         {children}
       </FullSizeContainer>
       <Navigation />
     </Wrapper>
   );
 };
+
 
