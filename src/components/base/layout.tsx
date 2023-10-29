@@ -20,12 +20,10 @@ export const Layout: CFC = ({ children }) => {
   return (
     <Wrapper>
       <Header />
-      <FullSizeContainer>
+      <FullSizeContainer sx={{ '&.css-k0sogd': { backgroundColor: 'rgb(55, 65, 81) !important' } }}>
         {children}
       </FullSizeContainer>
       <Navigation />
     </Wrapper>
   );
 };
-
-
