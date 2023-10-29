@@ -4,7 +4,6 @@ import { indigo, blueGrey } from '@mui/material/colors';
 import { ColorMode, useColorMode } from './mode.provider';
 import { OverrideLinkBehaviorThemeComponents } from '@/components/base';
 import { CFC } from '@/types/react';
-import { LinkProps } from '@mui/material/Link';
 
 const common = {
   primary: indigo,
@@ -83,3 +82,4 @@ export const MuiProvider: CFC = ({ children }) => {
     </ThemeProvider>
   );
 };
+
