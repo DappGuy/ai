@@ -56,10 +56,10 @@ export const MuiProvider: CFC = ({ children }) => {
               },
             },
           },
-          MuiGrid: {
+          MuiContainer: {
             styleOverrides: {
               root: {
-                backgroundColor: 'rgb(55, 65, 81)', // Set the background color for all Grid components
+                backgroundColor: 'rgb(55, 65, 81)', // Set the background color for all Container components
               },
             },
           },
