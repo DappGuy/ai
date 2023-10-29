@@ -19,7 +19,7 @@ export const Layout: CFC = ({ children }) => {
   return (
     <Wrapper>
       <Header />
-      <FullSizeContainer sx={{ backgroundColor: 'rgb(55, 65, 81)', '&.css-1qnowbl': { backgroundColor: 'rgb(55, 65, 81)' } }}>
+      <FullSizeContainer sx={{ backgroundColor: 'rgb(55, 65, 81)', 'css-1qnowbl': { backgroundColor: 'rgb(55, 65, 81)' } }}>
         {children}
       </FullSizeContainer>
       <Navigation />
