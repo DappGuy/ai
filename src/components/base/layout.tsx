@@ -7,11 +7,12 @@ import { CFC } from '@/types/react';
 
 const FullSizeContainer = styled(Box)({
   display: 'flex',
-  backgroundColor: 'rgb(55, 65, 81)' // Set the background color for the FullSizeContainer
+  backgroundColor: 'rgb(55, 65, 81)'
 });
 
 const Wrapper = styled(Box)({
   display: 'grid',
+  backgroundColor: 'rgb(55, 65, 81)',
   gridTemplateRows: 'auto 1fr auto',
   height: '100vh'
 });

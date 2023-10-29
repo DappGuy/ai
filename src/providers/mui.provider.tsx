@@ -59,7 +59,7 @@ export const MuiProvider: CFC = ({ children }) => {
           },
         },
         MuiButtonBase: {
-          // ... custom configurations for MuiButtonBase
+          
         },
       },
       shape: {
