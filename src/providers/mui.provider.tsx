@@ -39,27 +39,36 @@ const pallettes: Record<PaletteMode, PaletteOptions> = {
   }
 };
 
+
 export const MuiProvider: CFC = ({ children }) => {
   const { mode } = useColorMode();
 
   const theme = useMemo(
-    () =>
-      createTheme({
+    () => {
+      return createTheme({
         palette: pallettes[mode],
         components: {
           ...OverrideLinkBehaviorThemeComponents,
           MuiCssBaseline: {
-            styleOverrides: themeParam => ({
+            styleOverrides: {
               body: {
-                backgroundColor: themeParam.palette.mode === 'dark' ? blueGrey[900] : blueGrey[100]
-              }
-            })
-          }
+                backgroundColor: mode === ColorMode.DARK ? blueGrey[900] : blueGrey[100],
+              },
+            },
+          },
+          MuiGrid: {
+            styleOverrides: {
+              root: {
+                backgroundColor: 'rgb(55, 65, 81)', // Set the background color for all Grid components
+              },
+            },
+          },
         },
         shape: {
-          headerHeight: '4rem'
-        }
-      }),
+          headerHeight: '4rem',
+        },
+      });
+    },
     [mode]
   );
 
