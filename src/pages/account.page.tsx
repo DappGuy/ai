@@ -13,7 +13,7 @@ import {
   Typography,
   styled
 } from '@mui/material';
-import { sepolia, useAccount, useBalance, useConnect, useDisconnect } from 'wagmi';
+import { mainnet, useAccount, useBalance, useConnect, useDisconnect } from 'wagmi';
 
 import { Web3AuthConnector } from '@/auth/wagmi';
 import { Page } from '@/components/base/page';
@@ -248,7 +248,7 @@ export const AccountPage = () => {
         <ListItemAvatar>
           <NetworkAvatar />
         </ListItemAvatar>
-        <ListItemText primary={sepolia.name} />
+        <ListItemText primary={mainnet.name} />
       </Tile>
 
       <SubHeader>Accounts</SubHeader>

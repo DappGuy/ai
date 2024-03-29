@@ -1,10 +1,10 @@
 import { configureChains, createClient } from 'wagmi';
-import { sepolia } from 'wagmi/chains';
+import { mainnet } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 
 import { Web3AuthConnectorInstance } from '@/auth/web3-auth';
 
-const { chains, provider, webSocketProvider } = configureChains([sepolia], [publicProvider()]);
+const { chains, provider, webSocketProvider } = configureChains([mainnet], [publicProvider()]);
 
 export const Web3AuthConnector = Web3AuthConnectorInstance(chains);
 

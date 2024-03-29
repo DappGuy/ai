@@ -1,9 +1,9 @@
-import { sepolia } from 'wagmi';
+import { mainnet } from 'wagmi';
 
 import { UserAvatar } from '../ui';
 
 export const NetworkAvatar = () => {
   // const { chain } = useNetwork();
 
-  return <UserAvatar name={sepolia.name} />;
+  return <UserAvatar name={mainnet.name} />;
 };
