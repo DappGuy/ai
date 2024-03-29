@@ -13,7 +13,7 @@ import {
 } from '@uniswap/v3-sdk';
 import { BigNumber, Contract, providers, utils } from 'ethers';
 import JSBI from 'jsbi';
-import { goerli } from 'wagmi';
+import { sepolia } from 'wagmi';
 
 import { Erc20 } from './erc20-token';
 import { WrapEth } from './wrap-eth';
@@ -87,11 +87,11 @@ export namespace Uniswap {
 
 export const createToken = (token: IToken) => {
   if (token && token.address) {
-    return new Token(goerli.id, token.address, token.decimals, token.symbol, token.name);
+    return new Token(sepolia.id, token.address, token.decimals, token.symbol, token.name);
   } else {
-    const weth = WETH[goerli.id];
+    const weth = WETH[sepolia.id];
 
-    return new Token(goerli.id, weth.address, weth.decimals, weth.symbol, weth.name);
+    return new Token(sepolia.id, weth.address, weth.decimals, weth.symbol, weth.name);
   }
 };
 
